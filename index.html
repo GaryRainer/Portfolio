@@ -1,200 +1,277 @@
-<!DOCTYPE html>
+<!-- Read Me
 
-<html lang="pt-BR">
+    Projeto de Portfolio de Desenvolvedor Full Stack.
+    
+    Este projeto visa apresentar habilidades e conhecimentos básicos para a execução de atividades de desenvolvimento frontend e backend com as ferramentas HTML, CSS e JavaScript.
+
+    Os códigos-fontes dos trabalhos desenvolvidos podem ser acessados a partir do perfil GitHub do desenvolvedor - https://github.com/garyrainer
+
+    O projeto consiste de três elementos centrais:
+    1. Apresentação do desenvolvedor.
+    2. Descrição das habilidades.
+    3. Exposição dos projetos web construidos.
+
+    Este projeto é contínuo e atualizado periodicamente.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gary Rainer Chumacero Vanderlei - Desenvolvedor Full Stack</title>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gary Rainer Chumacero Vanderlei - Desenvolvedor Frontend</title>
+  <!-- estilo -->
+  <link rel="stylesheet" href="src/css/font-awesome.css" />
+  <link rel="stylesheet" href="src/css/reset.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <!-- Global -->
+  <link rel="stylesheet" href="src/css/globais.css" />
+  <link rel="stylesheet" href="src/css/variaveis.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+  <!-- secoes -->
+  <link rel="stylesheet" href="src/css/secoes/header.css" />
+  <link rel="stylesheet" href="src/css/secoes/home.css" />
+  <link rel="stylesheet" href="src/css/secoes/sobre.css" />
+  <link rel="stylesheet" href="src/css/secoes/habilidades.css" />
+  <link rel="stylesheet" href="src/css/secoes/projetos.css" />
+  <link rel="stylesheet" href="src/css/secoes/footer.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/estilos.css">
-    <link rel="stylesheet" href="./src/css/responsivo.css">
-
+  <!-- icones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 </head>
 
 <body>
-
-    <header class="cabecalho">
-
-        <a href="https://github.com/GaryRainer/Portfolio" target="_blank">
-            <h1 class="logo">GR</h1>
+  <!-- cabecalho, logo e menu de navegacao -->
+  <header class="header">
+    <div class="container">
+      <!-- logo envia para perfil -->
+      <div class="row justify-content-between alinhar-itens-no-centro">
+        <a href="https://github.com/GaryRainer" target="_blank">
+          <h1 class="logo">GR</h1>
         </a>
-
-        <nav class="menu">
-            <ul>
-                <li><a href="#projetos">Meus Projetos</a></li>
-            </ul>
+        <!-- navegacao na pagina -->
+        <nav>
+          <input id="menu-hamburguer" type="checkbox" />
+          <label for="menu-hamburguer">
+            <div class="menu">
+              <span class="hamburguer"></span>
+            </div>
+          </label>
+          <ul>
+            <li><a href="#sobre-mim">Sobre mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Meus projetos</a></li>
+          </ul>
         </nav>
+      </div>
+    </div>
+  </header>
 
-    </header>
-
-    <section class="home">
-
-        <div class="informacoes">
-
-            <h1>Olá! Sou Gary Rainer</h1>
-            <p>Um desenvolvedor Full Stack em formação e apaixonado por tecnologia, melhoria contínua e gerenciamento de
-                projetos.</p>
-            <p>Estou sempre buscando novos conhecimentos nas áreas de programação e ciência de dados, e me desafiando
-                com projetos de modelagem de dados, criação de banco de dados, frontend e backend.</p>
-            <p>Também gosto de trabalhar com as ferramentas Python, JavaScript, SQL e Power BI.</p>
-
-            <ul class="redes-sociais">
-                <li>
-                    <a href="https://www.linkedin.com/in/garyrainercv/" title="Ir para o LinkedIn" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://wa.me/5583988044923" title="Enviar Mensagem no WhatsApp" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/garyrainer" title="Ir para o GitHub" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://discord.gg/ZEHhTejS" title="Ir para o Discord" target="_blank">
-                        <i class="fab fa-discord"></i>
-                    </a>
-                </li>
-            </ul>
-
+  <!-- pagina inicial e foto de perfil -->
+  <section class="home">
+    <div class="container">
+      <div class="row full-screen alinhar-itens-no-centro">
+        <!-- introducao -->
+        <div class="texto-home">
+          <p>Olá!</p>
+          <h1>Sou Gary Rainer</h1>
+          <h2>Desenvolvedor Full Stack</h2>
+          <!-- redes sociais -->
+          <div class="redes-sociais">
+            <a href="https://www.linkedin.com/in/garyrainercv/" class="outer-shadow" title="Visitar Linkedin"
+              target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://wa.me/5583988044923" class="outer-shadow" title="Enviar mensagem" target="_blank"><i
+                class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/GaryRainer" class="outer-shadow" title="Visitar GitHub" target="_blank"><i
+                class="fab fa-github"></i></a>
+            <!-- <a href="#" class="outer-shadow" title="Visitar Instagram" target="_blank"><i class="fab fa-instagram"></i></a> -->
+            <a href="https://discord.gg/6mQUJe8N" class="outer-shadow" title="Visitar Discord" target="_blank"><i
+                class="fab fa-discord"></i></a>
+          </div>
         </div>
-
-        <div class="container-foto">
-
-            <div class="foto sombra-interna">
-
-                <img src="./src/imagens/Gary.png" alt="foto do portfólio do Gary">
-
-            </div>
-
+        <!-- foto de perfil -->
+        <div class="img-home">
+          <div class="img-box inner-shadow">
+            <img class="outer-shadow" src="src/imagens/foto-perfil.png" alt="foto do perfil do Gary" />
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-    </section>
+  <!-- descricao sobre mim -->
+  <section class="sobre-mim section" id="sobre-mim">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Sobre mim</h2>
+        </div>
+      </div>
+      <div class="row">
+        <!-- foto de perfil -->
+        <div class="imagem-sobre-mim">
+          <div class="img-box inner-shadow">
+            <img src="src/imagens/foto-perfil.png" alt="foto sobre mim" class="outer-shadow" />
+          </div>
+        </div>
+        <!-- apresentacao e curriculo profissional -->
+        <div class="informacoes-sobre-mim">
+          <p>
+            <strong>Olá! Me chamo Gary Rainer e sou um desenvolvedor Full Stack em formação.</strong> Sou apaixonado
+            pelas áreas de tecnologia, melhoria contínua e gerenciamento de projetos.
+          </p>
+          <p>
+            Estou sempre buscando novos conhecimentos nas áreas de programação e ciência de dados, e me desafiando com
+            projetos de modelagem de dados, criação de banco de dados, frontend e backend.
+          </p>
+          <p>
+            Também gosto de trabalhar com as ferramentas Python, JavaScript, SQL e Power BI.
+          </p>
+          <!-- curriculo -->
+          <div class="botoes">
+            <a target="_blank" href="#" class="botao outer-shadow">Veja meu CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="projetos">
+  <!-- descricao de habilidades -->
+  <section class="habilidades section" id="habilidades">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Minhas Habilidades</h2>
+        </div>
+      </div>
+      <!-- descricao de habilidades e nivel de conhecimento -->
+      <div class="container-habilidades">
+        <div class="informacoes javascript">
+          <div class="logo">
+            <i class="devicon devicon-javascript-plain" id="javascript"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
+            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
+            dignissimos possimus!</p>
+        </div>
+        <div class="informacoes html">
+          <div class="logo">
+            <i class="devicon devicon-html5-plain-wordmark" id="html"></i>
+          </div>
+          <h3>HTML5</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
+            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
+            dignissimos possimus!</p>
+        </div>
+        <div class="informacoes css">
+          <div class="logo">
+            <i class="devicon devicon-css3-plain-wordmark" id="css"></i>
+          </div>
+          <h3>CSS3</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
+            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
+            dignissimos possimus!</p>
+        </div>
+        <div class="informacoes github">
+          <div class="logo">
+            <i class="devicon devicon-github-original" id="github"></i>
+          </div>
+          <h3>GitHub</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
+            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
+            dignissimos possimus!</p>
+        </div>
+        <div class="informacoes git">
+          <div class="logo">
+            <i class="devicon devicon-git-plain" id="git"></i>
+          </div>
+          <h3>Git</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur ex
+            reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia atque
+            dignissimos possimus!</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section class="projetos" id="projetos">
-
-            <h2 class="titulo">Meus projetos</h2>
-
-            <div class="container-projetos">
-
-                <div class="projeto ativo">
-                    <a href="https://garyrainer.github.io/Portfolio/" target="_blank">
-                        <img src="./src/imagens/dummy_515x700_ffffff_cccccc.png" alt="Projeto">
-                        <h3>Projeto</h3>
-                        <div class="informacoes-projeto">
-                            <p>Projeto feito utilizando HTML, CSS e JavaScript</p>
-                            <p>🔗 Ver no GitHub Pages</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="projeto ativo">
-                    <a href="https://garyrainer.github.io/Portfolio/" target="_blank">
-                        <img src="./src/imagens/dummy_515x700_ffffff_cccccc.png" alt="Projeto">
-                        <h3>Projeto</h3>
-                        <div class="informacoes-projeto">
-                            <p>Projeto feito utilizando HTML, CSS e JavaScript</p>
-                            <p>🔗 Ver no GitHub Pages</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="projeto ativo">
-                    <a href="https://garyrainer.github.io/Portfolio/" target="_blank">
-                        <img src="./src/imagens/dummy_515x700_ffffff_cccccc.png" alt="Projeto">
-                        <h3>Projeto</h3>
-                        <div class="informacoes-projeto">
-                            <p>Projeto feito utilizando HTML, CSS e JavaScript</p>
-                            <p>🔗 Ver no GitHub Pages</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="projeto ativo">
-                    <a href="https://garyrainer.github.io/Portfolio/" target="_blank">
-                        <img src="./src/imagens/dummy_515x700_ffffff_cccccc.png" alt="Projeto">
-                        <h3>Projeto</h3>
-                        <div class="informacoes-projeto">
-                            <p>Projeto feito utilizando HTML, CSS e JavaScript</p>
-                            <p>🔗 Ver no GitHub Pages</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="projeto inativo">
-                    <a href="https://garyrainer.github.io/Portfolio/" target="_blank">
-                        <img src="./src/imagens/dummy_515x700_ffffff_cccccc.png" alt="Projeto 5">
-                        <h3>Projeto</h3>
-                        <div class="informacoes-projeto">
-                            <p>Projeto feito utilizando HTML, CSS e JavaScript</p>
-                            <p>🔗 Ver no GitHub Pages</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="projeto inativo">
-                    <a href="https://garyrainer.github.io/Portfolio/" target="_blank">
-                        <img src="./src/imagens/dummy_515x700_ffffff_cccccc.png" alt="Projeto 6">
-                        <h3>Projeto</h3>
-                        <div class="informacoes-projeto">
-                            <p>Projeto feito utilizando HTML, CSS e JavaScript</p>
-                            <p>🔗 Ver no GitHub Pages</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="projeto inativo">
-                    <a href="https://garyrainer.github.io/Portfolio/" target="_blank">
-                        <img src="./src/imagens/dummy_515x700_ffffff_cccccc.png" alt="Projeto 7">
-                        <h3>Projeto</h3>
-                        <div class="informacoes-projeto">
-                            <p>Projeto feito utilizando HTML, CSS e JavaScript</p>
-                            <p>🔗 Ver no GitHub Pages</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="projeto inativo">
-                    <a href="https://garyrainer.github.io/Portfolio/" target="_blank">
-                        <img src="./src/imagens/dummy_515x700_ffffff_cccccc.png" alt="Projeto 8">
-                        <h3>Projeto</h3>
-                        <div class="informacoes-projeto">
-                            <p>Projeto feito utilizando HTML, CSS e JavaScript</p>
-                            <p>🔗 Ver no GitHub Pages</p>
-                        </div>
-                    </a>
-                </div>
-
+  <!-- descricao de projetos -->
+  <section class="projetos section" id="projetos">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Meus projetos</h2>
+        </div>
+      </div>
+      <!-- descricao dos projetos e visualizacao -->
+      <div class="container-projetos">
+        <div class="projeto">
+          <a href="https://github.com" title="Acessar GitHub Pages" target="_blank">
+            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
+            <h3>Projeto 1</h3>
+            <div class="informacoes-projeto">
+              <p>Projeto feito usando HTML, CSS e JavaScript</p>
+              <p>🔗 Ver no GitHub Pages</p>
             </div>
+          </a>
+        </div>
+        <div class="projeto">
+          <a href="https://github.com" title="Acessar GitHub Pages" target="_blank">
+            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
+            <h3>Projeto 2</h3>
+            <div class="informacoes-projeto">
+              <p>Lorem ipsum</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+        <div class="projeto">
+          <a href="https://github.com" title="Acessar GitHub Pages" target="_blank">
+            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
+            <h3>Projeto 3</h3>
+            <div class="informacoes-projeto">
+              <p>Lorem ipsum</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+        <div class="projeto">
+          <a href="https://github.com" title="Acessar GitHub Pages" target="_blank">
+            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
+            <h3>Projeto 4</h3>
+            <div class="informacoes-projeto">
+              <p>Lorem ipsum</p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
 
-            <button class="btn-mostrar-projetos">Mostrar mais</button>
-        </section>
-
-        <script src="./js/index.js"></script>
+  <!-- roda-pe -->
+  <footer class="footer">
+    <div class="container">
+      <h2>Me envie uma mensagem!</h2>
+      <!-- redes sociais -->
+      <div class="redes-sociais">
+        <a href="https://www.linkedin.com/in/garyrainercv/" class="outer-shadow" title="Visitar Linkedin"
+          target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/5583988044923" class="outer-shadow" title="Enviar mensagem" target="_blank"><i
+            class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/GaryRainer" class="outer-shadow" title="Visitar GitHub" target="_blank"><i
+            class="fab fa-github"></i></a>
+        <!-- <a href="#" class="outer-shadow" title="Visitar Instagram" target="_blank"><i class="fab fa-instagram"></i></a> -->
+        <a href="https://discord.gg/6mQUJe8N" class="outer-shadow" title="Visitar Discord" target="_blank"><i
+            class="fab fa-discord"></i></a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
